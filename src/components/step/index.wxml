@@ -1,0 +1,24 @@
+<view class="contant">
+    <view class="box">
+        <view class="icon-contant" wx:for="{{Arr1}}" wx:key="item" style="background-color:{{item.done?'skyblue':'#f5f5f5'}};animation: null;">
+            <i class="icon-wuquangou_dingzhiyouhoutaibianji iconfont" style="font-size:18rpx; color: white;"></i>
+        </view>
+        <view class="step-contant" wx:for="{{Arr2}}" wx:key="item">
+            <view class="progress">
+                <view class="cover" wx:if="{{item.done}}"></view>
+            </view>
+            <view class="icon-contant" style="background-color:{{item.done?'skyblue':'#f5f5f5'}}">
+                <i class="icon-wuquangou_dingzhiyouhoutaibianji iconfont" style="font-size:18rpx; color: white;"></i>
+            </view>
+        </view>
+    </view>
+    <view class="step-text">
+        <view class="first-contant" style="color:{{color}}" wx:for="{{Arr1}}" wx:key="item">
+            11231
+        </view>
+        <view class="step-contant" wx:for="{{Arr2}}" wx:key="item">
+            <view class="space"></view>
+            <view class="text-contant" style="color:{{item.done?color:''}};">{{index+2}}11111</view>
+        </view>
+    </view>
+</view>
